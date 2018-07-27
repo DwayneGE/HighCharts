@@ -11,9 +11,14 @@
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../highcharts-element.html">
+    <link rel="import" href="../../paper-button/paper-button.html">
+
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
+        paper-button {
+          background-color:green;
+        }
       </style>
     </custom-style>
   </head>
@@ -22,6 +27,13 @@
       <h3>Basic highcharts-element demo</h3>
       <demo-snippet>
         <template>
+
+          <paper-button raised onclick="showChoosenPlot('Tokyo')">Tokyo</paper-button>
+          <paper-button raised onclick="showChoosenPlot('Boston')">Boston</paper-button>
+          <paper-button raised onclick="showChoosenPlot('Karlsruhe')">Karlsruhe</paper-button>
+
+          
+
           <highcharts-element></highcharts-element>
         </template>
       </demo-snippet>
